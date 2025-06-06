@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  /* 📸 Fullscreen background image without opacity */
+  background-image: url('assets/Red\ Oled\ Wallpaper.jpeg');  /* Use your correct image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 150vh;
+
+  /* ✍️ Text styling */
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+
+  /* 🧱 Center content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* 🧊 Optional text shadow for readability */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Top navbar with opacity */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.5); /* blackish-gray with low opacity */
+  padding: 35px 44px;
+  z-index: 1000;
+  backdrop-filter: blur(3px); /* optional: gives frosted glass effect */
+  display: flex;
+  justify-content:flex-end; /* aligns items to the right */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  text-decoration: grey;
+  color: beige;
+  font-weight: 100;
+  font-size: 1.5rem;
+  font-style:'Poppins', sans-serif;;
+  transition: color 0.3s;
+}
+
+.navbar li a:hover {
+  color: rgb(218, 101, 101); /* hover color */
+}
+
+.myimg{
+    width: 150px;
+    border-radius: 125px;
+    float : right;
+    margin-right: 10px;
+    
+}
+.overlay{
+  /* Position text to left-middle */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: flex-start; /* left alignment */
+  padding-left: 1vw; /* spacing from left */
+
+  /* Text styling */
+  color:whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+
+}
+.icon-bar {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.icon-bar a {
+  text-decoration: none;
+  background-color: #1a1e24;
+  color: rgb(78, 14, 14);
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.icon-bar a:hover {
+  background-color:whitesmoke;
+  color: #000;
+}
